@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <title>Sistema de Registro de Facturas</title>
+</head>
+<body>
+    <div class="page-header bg-danger text-white text-center">
+        <span class="h4">Registro de Datos</span>
+    </div>
+    
+
+        <!-- <form action="https://sheetdb.io/api/v1/l424ztv3cd1h4" method="POST" enctype="multipart/form-data" style="border:1px  solid #000;
+         width: 35%; margin: 0 auto;"> -->
+        <form method='POST' style="border:1px  solid #000;
+         width: 35%; margin: 0 auto;">
+
+         <a href="index.html">Volver Atras</a>
+         
+
+         <fieldset>
+            <legend class="text-center text-success">Datos a cargar</legend>
+
+            <div class="form-group">
+                <!-- en lo particular lo escondería o eliminaría pues es algo que se genera de manera random no por ingreso del usuario  -->
+                <!-- <label for="nom" id="uuid"  >UUID:</label>
+                <input type="text" class="form-control"> -->
+                
+
+            <!-- </div> -->
+            
+            <div id="data">
+
+                <!-- <div class="form-group"> --> 
+                    <!-- Lo sacaría pues se hace automáticamente con el ingreso del click -->
+                    <!-- <label for="mail" id="fecha_carga" >fecha_carga:</label>
+                    <input type="text" class="form-control"> -->
+                    <!-- </div> -->
+                    
+                    <!-- <div class="form-group"> -->
+                    <label for="factura" id="area" >Area correspondiente de la factura</label>
+                    <input type="text" class="form-control">
+                        <!-- </div> -->
+                        
+            <!-- <div class="form-group"> -->
+                    <label for="Monto" id="personal">DNI del usuario a Cargar</label>
+                    <input type="text" class="form-control">
+                <!-- </div> -->
+                
+                <!-- <div class="form-group"> -->
+                    <label for="link" id="link" >Link del archivo</label>
+                    <input type="text" class="form-control">
+                    <!-- </div> -->
+                    
+                    <!-- <div class="form-group"> -->
+                    <label for="email" id="email" >Email de contacto</label>
+                    <input type="text" class="form-control">
+                        <!-- </div> -->
+                        
+                        <!-- <div class="form-group"> -->
+                    <label for="facturacion" id="valor_facturacion" >Valor de Facturacion</label>
+                    <input type="text" class="form-control" id="valor_facturacion" >
+                    
+                            
+            </div>
+                            
+            <br>
+
+            <div class="btns">
+
+                <!-- <div class="form-group"> -->
+                    <button type="submit" id="Enviar" class="btn btn-primary">Enviar</button>
+    
+                <!-- </div> -->
+    
+    
+                <!-- <div class="form-group"> -->
+                   
+                    
+            </div>
+
+           <!-- </div> --> 
+
+
+         </fieldset>
+         
+
+
+        </form>
+
+
+      <!--  <button onclick="poster()">
+            SenderTester -->
+        </button>
+
+
+    </div>
+    
+    
+    
+    <script src="script.js" type="text/JavaScript"></script>
+    
+    
+
+
+
+</body>
+</html>
