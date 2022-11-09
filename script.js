@@ -9,6 +9,36 @@
             console.log(error);
         })
         */
+       function getDataByGet(e){
+           e.preventDefault() ;
+
+           let retriveData = [];
+           document.querySelectorAll('.form-group input').forEach(e => retriveData.push(e.value.trim())) 
+
+           let url = `https://sheetdb.io/api/v1/l424ztv3cd1h4/search?personal=${parseInt(retriveData[0])}&casesensitive=true`;
+
+           fetch(url)
+           .then(response => response.json())
+           .then(data => {
+               alert(JSON.stringify(data));
+           })
+           .catch(error => {
+               console.log(error);
+           })
+
+       }
+
+        let getData = document.getElementById('getter') || null;
+        
+               
+        if( getData != null ){
+
+            getData.addEventListener('click',getDataByGet);
+        }
+
+
+
+
 
 
 
@@ -29,7 +59,7 @@
 
 
         /*@params parameter objeto con data otenida del formulario*/
-        function getData(e){
+        function getDataByPost(e){
 
             e.preventDefault();
             
@@ -69,6 +99,10 @@
 
         }
 
-        let submitData = document.getElementById('Enviar');
+        let submitData = document.getElementById('Enviar') || null;
+        
+        if( submitData != null ){
 
-        submitData.addEventListener('click',getData);
+            submitData.addEventListener('click',getDataByPost);
+        }
+

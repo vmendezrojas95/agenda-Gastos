@@ -25,13 +25,12 @@
 
         <!-- <form action="https://sheetdb.io/api/v1/l424ztv3cd1h4" method="POST" enctype="multipart/form-data" style="border:1px  solid #000;
          width: 35%; margin: 0 auto;"> -->
-        <form method='POST' style="border:1px  solid #000;
-         width: 35%; margin: 0 auto;">
+        <form method='GET' >
          
          <a href="index.html">Volver Atras</a>
 
          <fieldset>
-            <legend class="text-center text-success">Datos a cargar</legend>
+            <legend class="text-center text-success">Datos de Carga</legend>
 
             <div class="form-group">
                 <!-- en lo particular lo escondería o eliminaría pues es algo que se genera de manera random no por ingreso del usuario  -->
@@ -57,11 +56,11 @@
                 <!-- </div> -->
                 
                 
-                    
+<!--                     
                     <!-- <div class="form-group"> -->
-                    <label for="email" id="email" >Email de contacto</label>
+                    <!-- <label for="email" id="email" >Email de contacto</label>
                     <input type="text" class="form-control">
-                        <!-- </div> -->
+                        </div> -->
                             
             </div>
                             
@@ -70,7 +69,7 @@
             <div class="btns">
     
                 <!-- <div class="form-group"> -->
-                    <button type="" class="btn btn-danger">Consultar</button>
+                    <button type="" class="btn btn-danger" id="getter">Consultar</button>
             </div>
 
             </div>
@@ -95,7 +94,27 @@
     <script src="script.js" type="text/JavaScript"></script>
     
     
+    <style>
 
+        body{
+            text-align: center;
+            margin: 10px 1rem 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+        }
+        
+        form{
+            position: relative;
+            top:1rem;
+            padding: clamp(10rem, 10vw ,20rem) ;
+        }
+        
+        form input{
+            margin:10px;
+        }
+        
+        </style>
 
 
 </body>
