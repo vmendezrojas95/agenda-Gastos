@@ -4,120 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getter</title>
+    <link rel="stylesheet" href="css/postData.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Buscar facturacion</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Buscar Facturas</title>
-</head>
-<body>
-    <div class="page-header bg-danger text-white text-center">
-        <span class="h4">Buscar Facturacion</span>
-    </div>
-    
+    <form method="post" class="form" action="">
 
-        <!-- <form action="https://sheetdb.io/api/v1/l424ztv3cd1h4" method="POST" enctype="multipart/form-data" style="border:1px  solid #000;
-         width: 35%; margin: 0 auto;"> -->
-        <form method='GET' >
-         
-         <a href="index.html">Volver Atras</a>
+        <h2 class="form__title"> Datos a Cargar</h2>
+        <p class="form__paragraph"> Ingresar usuario a buscar</p>
 
-         <fieldset>
-            <legend class="text-center text-success">Datos de Carga</legend>
+        <div class="form__container">
 
-            <div class="form-group">
-                <!-- en lo particular lo escondería o eliminaría pues es algo que se genera de manera random no por ingreso del usuario  -->
-                <!-- <label for="nom" id="uuid"  >UUID:</label>
-                <input type="text" class="form-control"> -->
-                
-
-            <!-- </div> -->
-            
-            <div id="data">
-
-                <!-- <div class="form-group"> --> 
-                    <!-- Lo sacaría pues se hace automáticamente con el ingreso del click -->
-                    <!-- <label for="mail" id="fecha_carga" >fecha_carga:</label>
-                    <input type="text" class="form-control"> -->
-                    <!-- </div> -->
-                    
-                    
-                        
-            <!-- <div class="form-group"> -->
-                    <label for="Monto" id="personal">DNI del usuario a Buscar</label>
-                    <input type="text" class="form-control">
-                <!-- </div> -->
-                
-                
-<!--                     
-                    <!-- <div class="form-group"> -->
-                    <!-- <label for="email" id="email" >Email de contacto</label>
-                    <input type="text" class="form-control">
-                        </div> -->
-                            
-            </div>
-                            
-            <br>
-
-            <div class="btns">
-    
-                <!-- <div class="form-group"> -->
-                    <button type="" class="btn btn-danger" id="getter">Consultar</button>
+            <div class="form__group">
+                <input type="text" id="personal" class="form__input" placeholder=" ">
+                <label for="dni" class="form__label">DNI del usuario a buscar</label>
+                <span class="form__line" ></span>
             </div>
 
-            </div>
+            <!-- <div class="form__group">
+                <input type="text" id="emailContacto" class="form__input" placeholder=" ">
+                <label for="emailContacto" class="form__label">Email contacto</label>
+                <span class="form__line" ></span>
+            </div> -->
+
+            <input type="submit" class="form__submit" value="Enviar" id="getter">
+            <a class="form__link" href="index.html">BACK</a>
+
+        </div>
+
+        <div id="to_append" align="left">
+
+        </div>
+
+    </form>
 
 
-         </fieldset>
-         
-
-
-        </form>
-
-
-    <!-- <button onclick="poster()">
-            SenderTester
-        </button> -->    
-
-
-    </div>
-    
-    
-    
     <script src="script.js" type="text/JavaScript"></script>
-    
     
     <style>
 
-        body{
-            text-align: center;
-            margin: 10px 1rem 2rem 1rem;
-            display: flex;
-            flex-direction: column;
-            height: 90vh;
+        #to_append{
+            margin: 2rem;
         }
-        
-        form{
-            position: relative;
-            top:1rem;
-            padding: clamp(10rem, 10vw ,20rem) ;
-        }
-        
-        form input{
-            margin:10px;
-        }
-        
-        </style>
 
+        #to_append fieldset {
 
-</body>
-</html>
+            border-radius: 20px;
+            margin: 2rem;
+            padding: 2rem 0rem 1rem 4rem;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+    </style>
 </body>
 </html>
