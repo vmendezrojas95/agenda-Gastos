@@ -32,7 +32,7 @@
                     <h3>Area de la facturacion</h3>
                     <h3>${data.area}</h3>
                     <h3>Fecha de carga</h3>
-                    <h4>${data.fecha_varga}</h4>
+                    <h4>${data.fecha_carga}</h4>
                     <h3>Valor de facturacion</h3>
                     <h4>${data.valor_facturacion}</h4>
                     </fieldset>
