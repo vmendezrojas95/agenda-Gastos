@@ -1,4 +1,4 @@
-# agendaGastos
+# agenda para Gastos
 Operaciones CRUD a una API usando JS
 
 API creada usando sheetdb.io
